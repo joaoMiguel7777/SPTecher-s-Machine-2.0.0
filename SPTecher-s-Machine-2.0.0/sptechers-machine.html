@@ -13,10 +13,12 @@
 
 <body>
     <div class="container">
+        <h1 style="color:white">Binary Machine</h1>
+
         <p><input id="demo1" type="text" placeholder="Ex: 42"></p>
 
         <button onclick="converter()">Converter</button>
-        <p>Octal:
+        <p>Octal:1
         <div id="demo2"></div>
         </p>
         <p>Hexadecimal:
@@ -30,9 +32,9 @@
         function converter() {
             var decimal = Number(demo1.value);
 
-            demo2.innerHTML = decimal.toString(8);
-            demo3.innerHTML = decimal.toString(16);
-            demo4.innerHTML = decimal.toString(2);
+            demo2.innerHTML = `<p style="color: white;">${decimal.toString(8)}</p>`;
+            demo3.innerHTML = `<p style="color: white;">${decimal.toString(16)}</p>`;
+            demo4.innerHTML = `<p style="color: white;">${decimal.toString(2)}</p>`;
         }
     </script>
 </body>
